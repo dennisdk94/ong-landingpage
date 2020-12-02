@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,body, #root {
+  height: 100%;
+}
+
+body {
+  --webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+  font: 14px 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #292929;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul li {
+  padding: 0 15px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+a.ibdn {
+  color: #A6CE39;
+}
+
+.background-image {
+  height: 100vh;
+  width: 100%;
+  flex: 1;
+  background-image: url("../img/background.svg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.container-background {
+  max-width: 900px;
+  margin: 0 5%;
+  padding: 5%;
+}
+
+.container-background h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 89px;
+
+  color: #000000;
+}
+
+.container-background p {
+  width: 425px;
+  margin-top: 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 157%;
+  color: #000000;
+}
+
+.container-background form {
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-background input {
+  width: 309px;
+  height: 44px;
+  padding: 0 15px;
+  margin: 15px 0;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+}
+
+div.buttons {
+  display: flex;
+}
+
+.container-background button {
+  background: #A6CE39;
+  width: 309px;
+  height: 51px;
+
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.container-background button.submit {
+  font-size: 20px;
+}
+
+.container-background button.player {
+  width: 77px;
+  height: 50px;
+
+  margin-left: 20px;
+}
+
+.container {
+  width: 100%;
+  background: linear-gradient(359.79deg, rgba(202, 245, 255, 0.04) 1.37%, rgba(0, 209, 255, 0) 71.54%);
+  margin-bottom: 10%;
+}
+
+.section {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 8%;
+}
+
+.section-voluntary {
+  display: flex;
+  justify-content: space-around;
+}
+
+.voluntary-title span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 157%;
+
+  color: #424242;
+}
+
+.voluntary-title h1 {
+  width: 80%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 157%;
+
+  color: #A6CE39;
+}
+
+.voluntary-description {
+  width: 63%;
+}
+
+.voluntary-description p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+
+  color: #424242;
+}
+
+.section-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.section-content {
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-header img {
+  width: 150px;
+  position: absolute;
+  margin: 0 -60px;
+}
+
+.content-header span {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+
+  color: #000000;
+}
+
+.content-description {
+  margin-top: 8%;
+}
+
+.content-description p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+
+  color: #424242;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.content-image img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 664px;
+  background: #555555;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+footer h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 25px;
+
+  color: #FFFEFE;
+
+  padding-top: 70px;
+}
+
+.contact-information {
+  display: flex;
+  margin-top: 60px;
+}
+
+.contact-description {
+  margin-left: 20px;
+}
+
+.contact-description span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+
+  color: #C4C4C4;
+}
+
+.contact-description p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+
+  color: #FFFFFF;
+}
