@@ -26,6 +26,10 @@ a {
   color: #292929;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 ul {
   list-style: none;
 }
@@ -55,6 +59,43 @@ header {
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+}
+
+.menu-mobile {
+ 	float: right;
+	width: 28px;
+	height: 28px;
+	margin-top:7px;
+	cursor: pointer;
+	background-image: url('../img/menu.svg');
+  background-size:100% 100%;
+	display: none;
+}
+
+.menu-mobile ul {
+  display: none;
+	z-index: 999;
+	text-align: center;
+  width: 90%;
+  height: 100%;
+	position: absolute;
+	right: 0;
+  top: 60px;
+  padding-top: 40px;
+  background-color: white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-mobile ul li {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  padding: 5% 10%;
 }
 
 a.ibdn {
@@ -171,7 +212,7 @@ div.buttons {
 
 .voluntary-title h1 {
   width: 80%;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
@@ -350,6 +391,14 @@ div.buttons {
 
 @media screen and (max-width: 768px) {
   .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-mobile ul {
     display: none;
   }
 
