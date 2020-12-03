@@ -1,4 +1,5 @@
 var modal = false;
+var video = document.getElementById("myVideo");
 
 document.getElementById("menu-mobile").onclick = openModal;
 
@@ -19,5 +20,11 @@ function openVideoPlayer() {
 }
 
 function closeVideo() {
-  document.getElementById("modal-video").style.display = "none"
+  stopVideo();
+  document.getElementById("modal-video").style.display = "none";
+}
+
+function stopVideo() {
+  video.pause();
+  video.currentTime = 0;
 }
