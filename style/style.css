@@ -105,7 +105,7 @@ a.ibdn {
 .background-image {
   width: 100%;
   flex: 1;
-  background-image: url("../img/background.svg");
+  background-image: url("../img/background2.svg");
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
@@ -121,14 +121,12 @@ a.ibdn {
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 65px;
-  line-height: 89px;
-
+  font-size: 43px;
+  line-height: 49px;
   color: #000000;
 }
 
 .container-background p {
-  width: 425px;
   margin-top: 32px;
   font-family: Roboto;
   font-style: normal;
@@ -200,25 +198,20 @@ div.buttons {
 .section {
   width: 80%;
   margin: 0 auto;
-  padding-top: 8%;
+  padding-top: 5%;
 }
 
 .section-voluntary {
   display: flex;
-  justify-content: space-around;
 }
 
-.voluntary-title span {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 157%;
-
-  color: #424242;
+.voluntary-title img {
+  width: 205px;
+  height: 118px;
+  border-bottom: 3px solid #A6CE39;
 }
 
 .voluntary-title h1 {
-  width: 80%;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -251,11 +244,11 @@ div.buttons {
 
 .section-content {
   width: 300px;
-  height: 100vh;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .content-header {
@@ -268,6 +261,7 @@ div.buttons {
   width: 150px;
   position: absolute;
   margin: 0 -60px;
+  z-index: -1;
 }
 
 .content-header span {
@@ -291,6 +285,7 @@ div.buttons {
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
+  padding-top: 10%;
 
   color: #424242;
 
@@ -337,7 +332,7 @@ div.buttons {
 
 .footer {
   width: 100%;
-  height: 664px;
+  height: 516px;
   background: #555555;
 
   display: flex;
@@ -433,6 +428,31 @@ div.buttons {
   background: #5c7a07;
 }
 
+@media screen and (max-width: 1240px) {
+  .container-background p {
+    width: 72%;
+  }
+
+  .section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 5%;
+  }
+
+  .content-header span {
+    font-size: 24px;
+  }
+
+  .content-header img {
+    width: 120px;
+  }
+
+  .content-description p {
+    font-size: 24px;
+    padding: 10% 5%;
+  }
+} 
+
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -447,12 +467,22 @@ div.buttons {
   }
 
   .container-background h1 {
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 24px;
+    line-height: 41px;
   } 
+
+  .container-background div.text {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 2% 5%;
+    border-radius: 10px;
+  }
 
   .container-background p {
     width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
   }
 
   .section-voluntary {
@@ -474,7 +504,19 @@ div.buttons {
   }
 
   .section-content {
-    margin-bottom: 60px;
+    margin-bottom: 24px;
+  }
+
+  .large {
+    margin-bottom: 200px;
+  }
+
+  .voluntary-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .footer {
@@ -488,5 +530,14 @@ div.buttons {
     font-size: 36px;
     line-height: 25px;
     text-align: center;
+  }
+
+  .social-container {
+    padding: 0 5%;
+}
+
+  .social-container button {
+    width: 64px;
+    height: 64px;
   }
 }
