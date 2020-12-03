@@ -171,6 +171,13 @@ div.buttons {
   -moz-border-radius-bottomright: 20px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
+  transition: background 0.2s;
+}
+
+.container-background button:hover {
+  background: #5c7a07;
+  color: #fff;
 }
 
 .container-background button.submit {
@@ -297,6 +304,37 @@ div.buttons {
   width: 100%;
 }
 
+.modal-video {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: none;
+}
+
+.modal-video span {
+  color: #FFF;
+  font-size: 40px;
+  float: right;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 70px;
+  padding: 5%;
+}
+
 .footer {
   width: 100%;
   height: 664px;
@@ -387,6 +425,12 @@ div.buttons {
   background: #A6CE39;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px 10px;
+
+  transition: background 0.2s;
+}
+
+.social-container button:hover {
+  background: #5c7a07;
 }
 
 @media screen and (max-width: 768px) {
