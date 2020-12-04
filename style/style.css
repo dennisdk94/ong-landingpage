@@ -317,6 +317,19 @@ div.buttons {
   cursor: pointer;
 }
 
+.video-container-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container-mobile video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 70px;
+  padding: 5%;
+}
+
 .video-container {
   width: 100%;
   background: #A6CE39;
@@ -552,6 +565,10 @@ div.buttons {
     background: rgba(255, 255, 255, 0.6);
     padding: 2% 5%;
     border-radius: 10px;
+  }
+
+  .container-background input {
+    width: 100%;
   }
 
   .container-background p {
