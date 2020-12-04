@@ -517,6 +517,18 @@ div.buttons {
   background: #5c7a07;
 }
 
+@media screen and (max-width: 1492px) {
+  .section {
+    width: 90%;
+  }
+  .content-header img {
+    width: 116px;
+  }
+  .content-header span {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 1240px) {
   .container-background p {
     width: 72%;
@@ -541,6 +553,7 @@ div.buttons {
     padding: 10% 5%;
   }
 } 
+
 
 @media screen and (max-width: 768px) {
   .menu {
