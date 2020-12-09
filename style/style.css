@@ -188,8 +188,10 @@ div.buttons {
 .container-background button.player {
   width: 77px;
   height: 50px;
-  margin-left: 20px;
+  margin: 0 auto;
   display: none;
+
+  background: red;
 }
 
 .container {
@@ -585,6 +587,10 @@ div.buttons {
   }
 
   .container-background input {
+    width: 100%;
+  }
+
+  #mc_embed_signup .green, #mc_embed_signup .gray {
     width: 100%;
   }
 
